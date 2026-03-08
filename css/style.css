@@ -405,7 +405,7 @@ mark,
  .img-fluid {
   
       max-width: 140%;
-      height: 169px;
+      height: 370px;
       object-fit: cover;
   }
 
@@ -9231,16 +9231,20 @@ h1, h2, h3, h4, h5,
 
     .about-info {
       background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
-      padding: 20px;
+      padding: 10px;
+    margin-top: 288px;
       border-radius: 10px;
       color: #fff;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: left;
       transition: all 0.4s ease-in-out;
       position: relative;
       overflow: hidden;
       margin-bottom: 3rem;
     }
-    
+    .about_text {
+      text-align: left;
+    }
     /* Glow & Hover Effects */
     .about-info:hover {
       transform: scale(1.05);
@@ -9810,7 +9814,7 @@ textarea.form-control {
       right: 0; }
 
   .heading-section h2 {
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 700; }
     .heading-section h2 span {
       font-weight: 400; }

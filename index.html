@@ -400,6 +400,7 @@
 			position: fixed;
 			bottom: 50px;
 			right: 10px;
+			
 			border: none;
 			padding: 10px;
 			cursor: pointer;
@@ -410,7 +411,12 @@
 			animation: floatUpDown 2s infinite ease-in-out;
 			/* Continuous animation */
 		}
+@media (max-width: 768px) {
+			.chat-toggle {
+				    margin-right: -80px;
 
+			}
+		}
 		.chat-toggle-logo {
 			width: 100px;
 			height: 120px;
@@ -1099,7 +1105,7 @@
 			inputField.value = "";
 
 			try {
-				const response = await fetch("https://portfolio-chatbot-production-6db9.up.railway.app", {
+				const response = await fetch("https://myportfolio-chatbot.onrender.com", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify({ question: input })

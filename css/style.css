@@ -693,6 +693,7 @@ pre {
 @media (max-width: 768px) {
   .cert-card img {
       height: 180px;
+      width: 306px;
   }
 
   .cert-content h3 {

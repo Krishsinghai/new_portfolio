@@ -294,7 +294,7 @@
 		.chatbot-container {
 			position: fixed;
 			bottom: 20px;
-			right: 20px;
+			right: 6px;
 			width: 400px;
 			background: white;
 			border-radius: 10px;
@@ -303,8 +303,14 @@
 			flex-direction: column;
 			overflow: hidden;
 			z-index: 999999;
+		}@media (max-width: 768px) {
+			#chat-input {
+				width: 20px;
+			}
+				.chatbot-container {
+					width: 325px;
+				}
 		}
-
 		.chat-header {
 			background: #000;
 			color: white;
@@ -1043,7 +1049,7 @@
 				<div class="chat-message bot-message">Hello! I'm Krish...</div>
 			</div>
 			<div class="chat-footer">
-				<input id="chat-input" type="text" placeholder="Type a message...">
+				<input id="chat-input" style="width: 20px;" placeholder="Type a message...">
 				<button onclick="sendMessage()">Send</button>
 			</div>
 		</div>
